@@ -1,0 +1,53 @@
+.vendor-navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar {
+  background-color: #54a0ec;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.collapse.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 0.5rem;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.navbar-nav{
+  list-style-type: none;
+}

@@ -1,0 +1,105 @@
+.bid-buy-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.bid-buy-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.bid-buy-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 10%;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.auctions-found {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filters {
+  text-align: left;
+  margin: 0 auto;
+  width: 60%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.filter-category,
+.filter-price,
+.filter-name,
+.filter-date {
+  margin-bottom: 20px;
+}
+
+.filter-category select,
+.filter-price input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-price .price-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.filter-name div,
+.filter-date div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #333;
+}
