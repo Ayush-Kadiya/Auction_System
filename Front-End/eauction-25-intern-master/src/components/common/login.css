@@ -1,0 +1,137 @@
+.auth-login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f6f9fc 0%, #eef2f7 100%);
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.auth-login-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    margin: 0 1rem;
+}
+
+.auth-login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.auth-login-header h1 {
+    color: #2c3e50;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.auth-login-header p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.auth-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.auth-login-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.auth-login-form-group label {
+    color: #2c3e50;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.auth-login-form-group input {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.auth-login-form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.auth-login-form-group input::placeholder {
+    color: #a0aec0;
+}
+
+.auth-login-submit-button {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.auth-login-submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.auth-login-forgot-button {
+    background: none;
+    border: none;
+    color: #3498db;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: -0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.auth-login-forgot-button:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.auth-login-forgot-form {
+    background: #f8fafc;
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+}
+
+.auth-login-signup-link {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.auth-login-signup-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-login-signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .auth-login-card {
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
+} 

@@ -1,0 +1,650 @@
+.update-auction-container {
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.update-auction-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+.update-auction-back-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.update-auction-title {
+  color: #1f2937;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.update-auction-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.update-auction-form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.update-auction-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.update-auction-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.update-auction-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+
+.update-auction-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.update-auction-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.update-auction-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.update-auction-btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.update-auction-submit-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.update-auction-submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.update-auction-cancel-btn {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.update-auction-cancel-btn:hover {
+  background-color: #b91c1c;
+}
+
+.update-auction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 16px;
+}
+
+.update-auction-card {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-auction-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.update-auction-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.update-auction-card-content {
+  padding: 16px;
+}
+
+.update-auction-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.update-auction-card-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.update-auction-card-label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.update-auction-card-actions {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.update-auction-edit-btn,
+.update-auction-delete-btn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.update-auction-edit-btn {
+  background-color: #6366f1;
+  color: white;
+}
+
+.update-auction-edit-btn:hover {
+  background-color: #4f46e5;
+}
+
+.update-auction-delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.update-auction-delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.update-auction-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.update-auction-modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.update-auction-modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.update-auction-modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+/* Search Styles */
+.ua-search-container {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.ua-search-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ua-clear-filters-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.ua-clear-filters-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+.ua-clear-filters-btn svg {
+  font-size: 14px;
+}
+
+.ua-search-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ua-search-input-group {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ua-search-icon {
+  position: absolute;
+  left: 12px;
+  color: #666;
+  font-size: 16px;
+}
+
+.ua-search-input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.ua-search-input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.ua-search-select {
+  padding: 12px 24px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.ua-search-select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.ua-search-select option {
+  padding: 8px;
+}
+
+/* Responsive styles for search */
+@media (max-width: 768px) {
+  .ua-search-top {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .ua-clear-filters-btn {
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+.ua-filter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 15px auto 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ua-price-filter {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ua-filter-icon {
+  color: #666;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.ua-price-input {
+  width: 120px;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.ua-price-input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.ua-price-separator {
+  color: #666;
+  font-weight: bold;
+}
+
+.ua-status-select {
+  padding: 12px 24px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.ua-status-select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.ua-status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+.ua-status-active .ua-status-badge {
+  background-color: #10b981;
+}
+
+.ua-status-upcoming .ua-status-badge {
+  background-color: #6366f1;
+}
+
+.ua-status-ended .ua-status-badge {
+  background-color: #ef4444;
+}
+
+/* Responsive styles for filters */
+@media (max-width: 768px) {
+  .ua-filter-wrapper {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .ua-price-filter {
+      width: 100%;
+  }
+
+  .ua-price-input {
+      flex: 1;
+  }
+
+  .ua-status-select {
+      width: 100%;
+  }
+}
+
+.ua-sticky-search-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 24px;
+  background-color: #f8fafc;
+  padding: 16px;
+}
+
+.ua-sticky-search-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ua-sticky-search-wrapper.scrolled .ua-sticky-search-content {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Search and Filter Styles */
+.ua-search-row {
+  margin-bottom: 16px;
+}
+
+.ua-search-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ua-search-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.ua-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.ua-search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.ua-category-select {
+  min-width: 140px;
+  padding: 10px 32px 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+}
+
+.ua-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ua-price-range {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ua-filter-icon {
+  color: #6b7280;
+}
+
+.ua-price-input {
+  width: 120px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.ua-price-separator {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.ua-status-select {
+  min-width: 140px;
+  padding: 10px 32px 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ua-search-input-container {
+      flex-direction: column;
+  }
+
+  .ua-filter-row {
+      flex-direction: column;
+  }
+
+  .ua-price-range {
+      width: 100%;
+  }
+
+  .ua-status-select,
+  .ua-category-select {
+      width: 100%;
+  }
+
+  .update-auction-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* New Header Styles */
+.ua-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 0 16px;
+}
+
+.ua-back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ua-back-button:hover {
+  background-color: #4f46e5;
+}
+
+.ua-main-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.ua-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 24px;
+} 

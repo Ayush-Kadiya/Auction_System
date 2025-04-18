@@ -1,0 +1,141 @@
+/* Modern About Page Styling */
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    border-radius: 2px;
+}
+
+.about-container h2 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    animation: slideIn 0.6s ease-out;
+}
+
+.about-container p {
+    color: #576574;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container ol {
+    list-style: none;
+    counter-reset: step-counter;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.about-container ol li {
+    position: relative;
+    padding: 1rem 1rem 1rem 3.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.about-container ol li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-container ol li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .about-container {
+        margin: 20px;
+        padding: 1.5rem;
+    }
+
+    .about-container h1 {
+        font-size: 2rem;
+    }
+
+    .about-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+    }
+
+    .about-container ol li {
+        padding: 0.8rem 0.8rem 0.8rem 3rem;
+    }
+}
+
+/* Add a highlight effect for important text */
+.highlight {
+    color: #3498db;
+    font-weight: 500;
+}
